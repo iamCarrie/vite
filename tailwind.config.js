@@ -1,46 +1,29 @@
-const {
-  screens,
-  screenSize
-} = require('./tailwind.setting.js');
+const { screens, screenSize } = require("./tailwind.setting.js");
 
 module.exports = {
-  mode: 'jit',
-  purge: {
-    content: [
-      './src/**/*.html',
-      './src/**/*.ejs',
-      './src/**/*.js',
-      './src/**/*.css'
-    ]
-  },
-  darkMode: false, // or 'media' or 'class'
+  content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      boxShadow: {
-      },
-      fontFamily:{
-        'poppins':'Poppins,sans-serif'
-      }
-
+      boxShadow: {},
     },
     fontSize: {
       ...{
-        vmp: `${((16 / screenSize.pc) * 100)}vw`,
-        vmt: `${((16 / screenSize.tab) * 100)}vw`,
-        vmm: `${((16 / screenSize.m) * 100)}vw`,
-        vmmls: `${(((16 / screenSize.m) * 100) / 1.77)}vw`
-      }
+        vmp: `${(16 / screenSize.pc) * 100}vw`,
+        vmt: `${(16 / 768) * 100}vw`,
+        vmm: `${(16 / screenSize.m) * 100}vw`,
+        vmmls: `${((16 / screenSize.m) * 100) / 1.77}vw`,
+      },
     },
 
     screens: {
-      ...screens
-    }
-
+      ...screens,
+    },
   },
 
   corePlugins: {
-    fontFamily: false
+    fontFamily: false,
   },
   variants: {},
-  plugins: []
+  plugins: [
+  ],
 };
