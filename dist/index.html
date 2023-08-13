@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <meta name="viewport" content="width=device-width,user-scalable=no,minimal-ui" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+    <meta property="og:type" content="website" />
+    <link href="assets/css/index.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div id="app" class="lBd overflow-hidden max-w-[1460px] m-auto">
+      <header class="flex items-center py-[28px] px-[25px]">
+        <div class="flex items-center pr-[52px]"><button type="button" class="m-nav-btn j-menu-btn flex-shrink-0 relative w-[20px] h-[16px] mr-[35px]" @click="isNav = !isNav; subNav = '';"><i></i></button> <a href="/" class="block w-[164px]">
+            <figure>
+              <picture class="w-full h-full"><img src="data:image/jpeg;base64,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" alt="appx" lazy class="w-full h-full" width="100%" height="100%" /></picture>
+            </figure>
+          </a></div>
+        <div class="flex items-center space-x-[8px]">
+          <div class="relative h-[48px] w-[245px]"><input class="w-full h-full border-[#737791] border-solid border-[1px] rounded-[8px] py-[2px] pr-[32px] pl-[24px]" placeholder="Serch here..."> <i class="flex items-center text-[#000] absolute cursor-pointer border-solid border-[#000] border-l-[1px] my-[10px] pl-[10px] pr-[15px] py-[5px] top-0 right-0"><svg class="w-[20px] h-[20px]">
+                <use class="fill-current" xlink:href="#serch"></use>
+              </svg></i></div>
+          <div class="relative overflow-hidden h-[48px] w-[100px]"><select name="" id="" class="w-full h-full appearance-none border-[#737791] text-[#737791] border-solid border-[1px] rounded-[8px] py-[2px] px-[16px]">
+              <option value="By All">By All</option>
+              <option value="By Station">By Station</option>
+              <option value="By Country">By Country</option>
+            </select> <i class="absolute transform -translate-y-1/2 top-1/2 flex-shrink-0 right-[10px] ml-[5px]"><svg class="w-[10px] h-[5px]">
+                <use class="fill-current" xlink:href="#arrow"></use>
+              </svg></i></div>
+        </div>
+        <div class="flex flex-grow items-center justify-end space-x-[50px]">
+          <div class="flex items-center space-x-[14px]">
+            <div class="flex items-center"><i><svg class="w-[20px] h-[20px]">
+                  <use class="fill-current" xlink:href="#weather"></use>
+                </svg></i>
+              <p class="font-bold ml-[12px]">09:54 am</p>
+            </div>
+            <div class="relative overflow-hidden h-[48px] w-[170px]"><select name="" id="" class="w-full h-full appearance-none bg-[#f2f2f7] text-[#737791] py-[2px] px-[16px]">
+                <option value="Antananarivo">Antananarivo</option>
+                <option value="Hongkong">Hongkong</option>
+                <option value="Taipei">Taipei</option>
+                <option value="Tokyo">Tokyo</option>
+              </select> <i class="absolute transform -translate-y-1/2 top-1/2 flex-shrink-0 right-0 ml-[5px]"><svg class="w-[10px] h-[5px]">
+                  <use class="fill-current" xlink:href="#arrow"></use>
+                </svg></i></div>
+          </div><button type="button"><i><svg class="w-[28px] h-[28px]">
+                <use class="fill-current" xlink:href="#sys"></use>
+              </svg></i></button> <button type="button" class="relative"><i><svg class="w-[26px] h-[28px]">
+                <use class="fill-current" xlink:href="#alert"></use>
+              </svg> </i><small class="rounded-full block absolute right-0 top-0 bg-[#000] w-[7px] h-[7px]"></small></button>
+          <div><button type="button" class="flex items-center">
+              <figure class="overflow-hidden rounded-full w-[50px] h-[50px]">
+                <picture class="w-full h-full"><img src="data:image/png;base64,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" alt="appx" lazy class="w-full h-full" width="100%" height="100%" /></picture>
+              </figure><i class="flex-shrink-0 ml-[5px]"><svg class="w-[10px] h-[5px]">
+                  <use class="fill-current" xlink:href="#arrow"></use>
+                </svg></i>
+            </button></div>
+        </div>
+      </header>
+      <main class="flex p:pr-[26px]">
+        <nav class="overflow-hidden flex-shrink-0 transition-all" :class="{ '!w-[260px]' : isNav , 'w-[80px]' : !isNav}">
+          <ul>
+            <li class="group/nav" v-for="i in 10" :key="i"><a href="javascript:;" class="flex items-center px-[26px] py-[15px]" :class="{ 
+                'group-hover/nav:bg-[#d8dde8]'
+                :isNav
+              }" @click="isNav && subNav !== i ? subNav = i : subNav = ''"><i class="relative" :class="{ 
+                  'p:before:transition-all p:before:absolute p:before:rounded-[10px] p:before:w-[40px] p:before:h-[40px] p:before:-translate-x-1/2 p:before:-translate-y-1/2 p:before:top-1/2 p:before:left-1/2 p:hover:before:bg-[#d8dde8]' 
+                  : !isNav}"><svg class="relative z-1 w-[18px] h-[20px]">
+                    <use class="fill-current" xlink:href="#home"></use>
+                  </svg></i>
+                <p class="flex-shrink-0 ml-[10px] text-[16px] font-[600] flex-grow" :class="{'opacity-0 pointer-events-none':!isNav}">Marketing & Sales</p><i class="flex-shrink-0 ml-[5px]"><svg class="w-[10px] h-[5px]">
+                    <use class="fill-current" xlink:href="#arrow"></use>
+                  </svg></i>
+              </a>
+              <ul class="overflow-hidden transition-all max-h-0 h-0" :class="{'opacity-0 pointer-events-none':!isNav , 'h-auto max-h-[300px]' : subNav === i}">
+                <li class="group/subnav"><a href="/" class="flex items-center pl-[55px] py-[10px] group-hover/subnav:bg-[#ededed]">
+                    <p class="text-[14px] font-[600]">Option_1</p>
+                  </a>
+                  <ul>
+                    <li><a href="/" class="flex items-center pl-[80px] py-[10px]">
+                        <p class="text-[14px] font-[400]">Suboption_1</p>
+                      </a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div class="flex-grow pt-[50px]">
+          <ul class="flex font-[500] text-[14px] mb-[25px]">
+            <li>
+              <p class="text-[#737791] after:content-['>'] after:mx-[15px]">Home</p>
+            </li>
+            <li><a href="#" class="font-bold text-[#121212]">My Collection</a></li>
+          </ul>
+          <form class="flex items-end bg-[#fff] w-full px-[22px] py-[25px] space-x-[15px]">
+            <div>
+              <p class="text-[#737791] text-[14px] leading-[21px] mb-[5px]">Category</p>
+              <div class="relative h-[48px] w-[222px]"><select name="Announcement" class="block w-full h-full overflow-hidden border-solid border-[1px] border-[#F2F2F7] rounded-[8px] appearance-none text-[#737791] py-[2px] px-[16px] text-[18px]">
+                  <option value="HR Announcemen">HR Announcement</option>
+                  <option value="News">News</option>
+                  <option value="HR Announcemen">All</option>
+                </select> <i class="absolute transform -translate-y-1/2 top-1/2 flex-shrink-0 right-[15px] ml-[5px]"><svg class="w-[10px] h-[5px]">
+                    <use class="fill-current" xlink:href="#arrow"></use>
+                  </svg></i></div>
+            </div>
+            <div>
+              <p class="text-[#737791] font-poppins text-[14px] font-[400] leading-[21px] mb-[5px]">Subtitle</p><input class="block overflow-hidden border-solid border-[1px] border-[#F2F2F7] rounded-[8px] px-[15px] h-[48px] w-[218px]">
+            </div><button type="submit" class="flex items-center justify-center bg-[#F2F2F7] rounded-[8px] px-[15px] h-[48px]">
+              <p>Search</p>
+            </button>
+          </form>
+          <section class="pt-[30px] space-y-[15px]">
+            <header class="flex items-center">
+              <p class="flex-grow text-[#11263C] font-[600] text-[16px]">My Collection</p>
+              <div class="flex items-center">
+                <p class="text-[#737791] font-[600] text-[16px]">Total 480 |</p>
+                <div class="flex items-center space-x-[20px] ml-[26px]"><button type="button" class="rotate-90"><i class="block"><svg class="w-[10px] h-[5px]">
+                        <use class="fill-current" xlink:href="#arrow"></use>
+                      </svg></i></button>
+                  <div class="relative h-[32px] w-[40px]"><select name="Announcement" class="block w-full h-full overflow-hidden rounded-[5px] appearance-none text-[#737791] px-[10px] text-[14px]">
+                      <option value="1">1</option>
+                      <option value="10">10</option>
+                      <option value="15">15</option>
+                    </select> <i class="absolute transform -translate-y-1/2 top-1/2 flex-shrink-0 right-[5px] ml-[5px]"><svg class="w-[10px] h-[5px]">
+                        <use class="fill-current" xlink:href="#arrow"></use>
+                      </svg></i></div><button type="button" class="rotate-[270deg]"><i class="block"><svg class="w-[10px] h-[5px]">
+                        <use class="fill-current" xlink:href="#arrow"></use>
+                      </svg></i></button>
+                </div>
+              </div>
+            </header>
+            <div class="bg-[#fff] border-solid border-[1px] border-[#d5d5da]">
+              <ul>
+                <li class="border-solid border-[#d5d5da] border-b-[1px] last:border-none px-[15px] py-[18px]">
+                  <div class="relative p:pl-[50px]">
+                    <div><button type="button" class="absolute left-[15px] top-[3px]"><i class="block align-top h-[19px]"><svg class="w-[13px] h-[19px]">
+                            <use class="fill-current" xlink:href="#mark"></use>
+                          </svg></i></button>
+                      <p class="bg-[#ededed] text-[#11263C] top-0 right-0 rounded-[38px] py-[2px] px-[8px] text-[12px] p:absolute">News</p>
+                    </div>
+                    <div class="p:flex p:flex-wrap">
+                      <p class="w-full font-[500] text-[14px] leading-[24px] p:mb-[10px] p:pr-[100px]">APPX System New Version Release Announce on APPX System New Version Release Announce onAPPX System New Version Release Announce onAPPX System New Version Release Announce onAPPX System New Version Release Announce onAPPX System New Version Release Announce on 14th Dec...</p>
+                      <div class="flex items-center space-x-[25px]"><button type="button" class="flex items-center"><i><svg class="w-[15px] h-[15px]">
+                              <use class="fill-current" xlink:href="#like"></use>
+                            </svg></i>
+                          <p class="text-[#737791] ml-[6px] text-[12px]">150 Likes</p>
+                        </button> <button type="button" class="flex items-center"><i><svg class="w-[15px] h-[15px]">
+                              <use class="fill-current" xlink:href="#comment"></use>
+                            </svg></i>
+                          <p class="text-[#737791] ml-[6px] text-[12px]">10 Comments</p>
+                        </button> <button type="button" class="flex items-center"><i><svg class="w-[12px] h-[15px]">
+                              <use class="fill-current" xlink:href="#up-right"></use>
+                            </svg></i>
+                          <p class="text-[#737791] ml-[6px] text-[12px]">5 Shares</p>
+                        </button></div><time datetime="2022-12-19" class="text-[#737791] font-[400] text-[12px] p:flex-grow p:text-right">Dec 19, 2022</time>
+                    </div>
+                  </div>
+                </li>
+                <li class="border-solid border-[#d5d5da] border-b-[1px] last:border-none px-[15px] py-[18px]">
+                  <div class="relative p:pl-[50px]">
+                    <div><button type="button" class="absolute left-[15px] top-[3px]"><i class="block align-top h-[19px]"><svg class="w-[13px] h-[19px]">
+                            <use class="fill-current" xlink:href="#mark"></use>
+                          </svg></i></button>
+                      <p class="bg-[#ededed] text-[#11263C] top-0 right-0 rounded-[38px] py-[2px] px-[8px] text-[12px] p:absolute">News</p>
+                    </div>
+                    <div class="p:flex p:flex-wrap">
+                      <p class="w-full font-[500] text-[14px] leading-[24px] p:mb-[10px] p:pr-[100px]">APPX System New Version Release Announce on APPX System New Version Release Announce onAPPX System New Version Release Announce onAPPX System New Version Release Announce onAPPX System New Version Release Announce onAPPX System New Version Release Announce on 14th Dec...</p>
+                      <div class="flex items-center space-x-[25px]"><button type="button" class="flex items-center"><i><svg class="w-[15px] h-[15px]">
+                              <use class="fill-current" xlink:href="#like"></use>
+                            </svg></i>
+                          <p class="text-[#737791] ml-[6px] text-[12px]">150 Likes</p>
+                        </button> <button type="button" class="flex items-center"><i><svg class="w-[15px] h-[15px]">
+                              <use class="fill-current" xlink:href="#comment"></use>
+                            </svg></i>
+                          <p class="text-[#737791] ml-[6px] text-[12px]">10 Comments</p>
+                        </button> <button type="button" class="flex items-center"><i><svg class="w-[12px] h-[15px]">
+                              <use class="fill-current" xlink:href="#up-right"></use>
+                            </svg></i>
+                          <p class="text-[#737791] ml-[6px] text-[12px]">5 Shares</p>
+                        </button></div><time datetime="2022-12-19" class="text-[#737791] font-[400] text-[12px] p:flex-grow p:text-right">Dec 19, 2022</time>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+    <script defer="defer" src="scripts/index.js"></script>
+  </body>
+
+</html>

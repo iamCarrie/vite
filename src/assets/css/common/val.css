@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+:root {
+  --font-family: 'Poppins', arial, "微軟正黑體", "Helvetica Neue", helvetica, "新細明體", "蘋果儷黑體", verdana, sans-serif;
+  --line-height: 1.5;
+  --img-url: '../images/img.png';
+  --color:
+    (
+      wh : #fff,
+      bk : #000,
+    );
+}
